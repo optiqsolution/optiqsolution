@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import {
   BarChart3,
   Brain,
@@ -7,50 +7,58 @@ import {
   Database,
   Globe,
   Smartphone,
-  Store
-} from 'lucide-react';
+  Store,
+} from "lucide-react";
 
 const services = [
   {
     icon: <Globe className="h-8 w-8" />,
-    title: 'Web Development',
-    description: 'Modern, responsive websites built with React, Next.js, and other cutting-edge technologies.'
+    title: "Web Development",
+    description:
+      "Delivering cutting-edge, responsive websites with technologies like React, Next.js, and more, ensuring your online presence stands out and performs flawlessly.",
   },
   {
     icon: <Smartphone className="h-8 w-8" />,
-    title: 'Mobile Development',
-    description: 'Native and cross-platform mobile applications for iOS and Android.'
+    title: "Mobile Development",
+    description:
+      "Delivering cutting-edge, responsive websites with technologies like React, Next.js, and more, ensuring your online presence stands out and performs flawlessly.",
   },
   {
     icon: <Code2 className="h-8 w-8" />,
-    title: 'Custom Software',
-    description: 'Tailored software solutions designed to meet your specific business needs.'
+    title: "Custom Software",
+    description:
+      "Creating tailored software solutions meticulously crafted to align with your unique business requirements and drive growth.",
   },
   {
     icon: <Cloud className="h-8 w-8" />,
-    title: 'Cloud Solutions',
-    description: 'Scalable cloud infrastructure and deployment using AWS, Azure, or GCP.'
+    title: "Cloud Solutions",
+    description:
+      "Designing scalable, secure cloud infrastructures using AWS, Azure, and GCP to power your digital transformation.",
   },
   {
     icon: <Database className="h-8 w-8" />,
-    title: 'Database Design',
-    description: 'Efficient database architecture and optimization for your applications.'
+    title: "Database Design",
+    description:
+      "Optimizing your applications with robust database architectures for efficiency, reliability, and scalability.",
   },
   {
     icon: <Store className="h-8 w-8" />,
-    title: 'E-commerce Solutions',
-    description: 'Custom online stores with secure payment integration and inventory management.'
+    title: "E-commerce Solutions",
+    description:
+      "Building feature-rich online stores with secure payment integrations and streamlined inventory management for smooth operations.",
   },
   {
     icon: <BarChart3 className="h-8 w-8" />,
-    title: 'Analytics Integration',
-    description: 'Data tracking and visualization to help you make informed decisions.'
+    title: "Analytics Integration",
+    description:
+      "Transforming data into actionable insights with advanced tracking and visualization tools to guide smarter decisions.",
   },
   {
     icon: <Brain className="h-8 w-8" />,
-    title: 'AI Integration',
-    description: 'Implement AI and machine learning solutions to automate and enhance your business.'
-  }
+    title: "AI Integration",
+    description:
+      "Implementing cutting-edge AI and machine learning solutions to automate, innovate, and elevate your business processes.",
+  },
 ];
 
 export default function Services() {
@@ -65,8 +73,8 @@ export default function Services() {
         >
           <h2 className="text-4xl font-bold mb-4">Our Services</h2>
           <p className="text-gray-600">
-            We offer a comprehensive range of digital solutions to help your business
-            thrive in the modern technological landscape.
+            We offer a comprehensive range of digital solutions to help your
+            business thrive in the modern technological landscape.
           </p>
         </motion.div>
 

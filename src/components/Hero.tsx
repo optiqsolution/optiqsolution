@@ -60,17 +60,17 @@ export default function Hero() {
             <ProcessCard
               icon={<Lightbulb className="h-8 w-8" />}
               title="IDEATE"
-              description="We facilitate you in shaping your ideas to ensure market fit and technical feasibility, giving you the competitive edge."
+              description="Empowering your vision with cutting-edge expertise. Together, we refine your concepts, ensuring market relevance and technical feasibility to provide you with a winning edge in the competitive landscape."
             />
             <ProcessCard
               icon={<Rocket className="h-8 w-8" />}
               title="INNOVATE"
-              description="We don't just execute. We continue to innovate and show you creative ways of achieving your vision."
+              description="Beyond execution lies transformation. We relentlessly innovate to uncover creative solutions, ensuring your vision evolves into groundbreaking realities."
             />
             <ProcessCard
               icon={<Target className="h-8 w-8" />}
               title="REALIZE"
-              description="We 'walk the talk'. We will be a partner in your journey from inception to realization and beyond."
+              description="From vision to value, we’re your strategic partner in every step. Together, we bring your ideas to life, ensuring sustained success beyond realization."
             />
           </div>
         </motion.div>
