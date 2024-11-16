@@ -20,8 +20,7 @@ export default function Header() {
           
           <div className="hidden md:flex space-x-8">
             <NavLink href="#services">Services</NavLink>
-            <NavLink href="#about">About</NavLink>
-            <NavLink href="#contact">Contact</NavLink>
+            <NavLink href="#contact">Contact Us</NavLink>
           </div>
 
           <button
@@ -39,8 +38,7 @@ export default function Header() {
             className="md:hidden pt-4 pb-2"
           >
             <NavLink href="#services" mobile>Services</NavLink>
-            <NavLink href="#about" mobile>About</NavLink>
-            <NavLink href="#contact" mobile>Contact</NavLink>
+            <NavLink href="#contact" mobile>Contact Us</NavLink>
           </motion.div>
         )}
       </nav>

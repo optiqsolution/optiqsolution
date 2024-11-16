@@ -787,6 +787,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^22.9.0":
+  version: 22.9.0
+  resolution: "@types/node@npm:22.9.0"
+  dependencies:
+    undici-types: "npm:~6.19.8"
+  checksum: 10c0/3f46cbe0a49bab4ba30494025e4c8a6e699b98ac922857aa1f0209ce11a1313ee46e6808b8f13fe5b8b960a9d7796b77c8d542ad4e9810e85ef897d5593b5d51
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*":
   version: 15.7.13
   resolution: "@types/prop-types@npm:15.7.13"
@@ -3123,6 +3132,7 @@ __metadata:
   resolution: "techforge@workspace:."
   dependencies:
     "@eslint/js": "npm:^9.9.1"
+    "@types/node": "npm:^22.9.0"
     "@types/react": "npm:^18.3.5"
     "@types/react-dom": "npm:^18.3.0"
     "@vitejs/plugin-react": "npm:^4.3.1"
@@ -3247,6 +3257,13 @@ __metadata:
     react: ^17.x || ^18.x
     react-dom: ^17.x || ^18.x
   checksum: 10c0/e3200599f1de2b06933960ab291f4949194a629b44b73e5d88b591119f90cb32a74f2edc9ebaea823c418babc2b62c41e223ac600a29ceaee223d1fe4cfe4342
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~6.19.8":
+  version: 6.19.8
+  resolution: "undici-types@npm:6.19.8"
+  checksum: 10c0/078afa5990fba110f6824823ace86073b4638f1d5112ee26e790155f481f2a868cc3e0615505b6f4282bdf74a3d8caad715fd809e870c2bb0704e3ea6082f344
   languageName: node
   linkType: hard
 

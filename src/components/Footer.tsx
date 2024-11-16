@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { Code2, Github, Linkedin, Twitter } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Code2, Github, Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -17,30 +17,29 @@ export default function Footer() {
               <span className="text-xl font-bold">TechForge</span>
             </motion.div>
             <p className="text-gray-400">
-              Building the future of digital experiences, one line of code at a time.
+              Driving innovation and crafting seamless digital solutions to
+              transform the future, one idea at a time.
             </p>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-gray-400">
               <li>Web Development</li>
-              <li>Mobile Apps</li>
-              <li>Custom Software</li>
+              <li>AI Integrations</li>
               <li>Cloud Solutions</li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Blog</li>
+              <li>Services</li>
+              <li>Blog (coming soon)</li>
               <li>Contact</li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
             <div className="flex space-x-4">
@@ -71,9 +70,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} TechForge. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} TechForge. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

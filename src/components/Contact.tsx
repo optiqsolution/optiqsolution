@@ -10,10 +10,81 @@ export default function Contact() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Integrate email service
-    console.log(formState);
+
+    const ACCOUNT_PASSWORD = import.meta.env.VITE_MAILGUN_API_KEY;
+    const { name = "", email, company = "", message = "" } = formState;
+
+    if (!email) {
+      alert("Your name and email address are required!");
+      return;
+    }
+
+    if (!ACCOUNT_PASSWORD) {
+      console.error("VITE_MAILGUN_API_KEY is missing.");
+      alert("Server configuration error. Please contact support.");
+      return;
+    }
+
+    const sendEmail = async (to: string, subject: string, text: string) => {
+      try {
+        const response = await fetch(
+          "https://api.mailgun.net/v3/contact.virajbandara.com/messages",
+          {
+            method: "POST",
+            headers: {
+              Authorization: "Basic " + btoa(`api:${ACCOUNT_PASSWORD}`),
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: new URLSearchParams({
+              from: "TechForge <noreply@contact.virajbandara.com>",
+              to,
+              subject,
+              text,
+            }),
+          }
+        );
+
+        if (!response.ok) {
+          const errorDetails = await response.json();
+          console.error("Mailgun Error:", errorDetails);
+          throw new Error(
+            "We are unable to send your message. Please contact us via me@virajbandara.com."
+          );
+        }
+
+        return true;
+      } catch (error) {
+        console.error("Error:", error);
+        throw new Error(
+          "An unexpected error occurred. Please try again later."
+        );
+      }
+    };
+
+    try {
+      // Sending email to the user
+      await sendEmail(
+        `${name} <${email}>`,
+        `Hello ${name}, Thank you for reaching out to TechForge`,
+        `Dear ${name},\n\nThank you for contacting TechForge! We’ve received your message and will get back to you shortly. Our team is here to assist with any questions or needs you have about our services.\n\nIf there's anything urgent, feel free to reach us at +1 905 981 8019 or reply to this email directly.\n\nWe look forward to helping you!\n\nBest regards,\nTechForge Team`
+      );
+
+      // Sending email to the internal team
+      await sendEmail(
+        `TechForge - Contact Us <me@virajbandara.com>`,
+        `[Attention] New inquiry received.`,
+        `Hello Team,\n\nYou have received a new contact form submission:\n\n- Name: ${name}\n- Email: ${email}\n- Company: ${company}\n- Message:\n${message}\n\nPlease review and follow up as necessary.\n\nBest regards,\nTechForge Automated System`
+      );
+
+      alert(
+        "Thank you for contacting us. We have successfully sent your message to our team."
+      );
+    } catch (error) {
+      console.error("Error:", error);
+      alert('Something went wrong! Please contact us via me@virajbandara.com');
+    }
   };
 
   return (
