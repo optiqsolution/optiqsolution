@@ -2,13 +2,22 @@ import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 import { useState } from "react";
 
+interface IContactUsForm {
+  name: string;
+  email: string;
+  company?: string;
+  message: string;
+}
+
+const initialValues = {
+  name: "",
+  email: "",
+  company: "",
+  message: "",
+};
+
 export default function Contact() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    company: "",
-    message: "",
-  });
+  const [formState, setFormState] = useState<IContactUsForm>(initialValues);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -78,12 +87,14 @@ export default function Contact() {
         `Hello Team,\n\nYou have received a new contact form submission:\n\n- Name: ${name}\n- Email: ${email}\n- Company: ${company}\n- Message:\n${message}\n\nPlease review and follow up as necessary.\n\nBest regards,\nTechForge Automated System`
       );
 
+      setFormState(initialValues);
+
       alert(
         "Thank you for contacting us. We have successfully sent your message to our team."
       );
     } catch (error) {
       console.error("Error:", error);
-      alert('Something went wrong! Please contact us via me@virajbandara.com');
+      alert("Something went wrong! Please contact us via me@virajbandara.com");
     }
   };
 
