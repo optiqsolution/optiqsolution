@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 
+// source: https://techicons.dev/icons
+
 const technologies = [
   { name: "React", icon: "/tech/react.svg" },
   { name: "TypeScript", icon: "/tech/typescript.svg" },
