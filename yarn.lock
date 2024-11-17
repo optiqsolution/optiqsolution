@@ -219,6 +219,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@cloudflare/workers-types@npm:^4.20241112.0":
+  version: 4.20241112.0
+  resolution: "@cloudflare/workers-types@npm:4.20241112.0"
+  checksum: 10c0/acb8a65a3018702f09ad57b3eb4b72f3122766592cc901af3d94b75a3bd77eabe163f1d5ae1720a510d2654feba2db5728f0102f8880d1450ab9349f0b029aad
+  languageName: node
+  linkType: hard
+
 "@esbuild/aix-ppc64@npm:0.21.5":
   version: 0.21.5
   resolution: "@esbuild/aix-ppc64@npm:0.21.5"
@@ -3131,6 +3138,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "techforge@workspace:."
   dependencies:
+    "@cloudflare/workers-types": "npm:^4.20241112.0"
     "@eslint/js": "npm:^9.9.1"
     "@types/node": "npm:^22.9.0"
     "@types/react": "npm:^18.3.5"
