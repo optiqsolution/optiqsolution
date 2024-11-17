@@ -6,6 +6,7 @@ export async function onRequestPost(context) {
 
   const MAILGUN_DOMAIN = "contact.virajbandara.com";
   const MAILGUN_URL = `https://api.mailgun.net/v3/${MAILGUN_DOMAIN}/messages`;
+  const ACCOUNT_PASSWORD = context.env.MAILGUN_API_KEY;
 
   try {
     // Parse the JSON body
@@ -25,7 +26,7 @@ export async function onRequestPost(context) {
       const response = await fetch(MAILGUN_URL, {
         method: "POST",
         headers: {
-          Authorization: `Basic ${btoa(`api:${context.env.MAILGUN_API_KEY}`)}`,
+          Authorization: `Basic ${btoa(`api:${ACCOUNT_PASSWORD}`)}`,
           "Content-Type": "application/x-www-form-urlencoded",
         },
         body: new URLSearchParams({
