@@ -4,7 +4,7 @@ export async function onRequestPost(context) {
     return new Response("Method not allowed", { status: 405 });
   }
 
-  const MAILGUN_DOMAIN = "contact.virajbandara.com";
+  const MAILGUN_DOMAIN = "contact.optiqusolution.com";
   const MAILGUN_URL = `https://api.mailgun.net/v3/${MAILGUN_DOMAIN}/messages`;
   const ACCOUNT_PASSWORD = context.env.MAILGUN_API_KEY;
 
@@ -30,7 +30,7 @@ export async function onRequestPost(context) {
           "Content-Type": "application/x-www-form-urlencoded",
         },
         body: new URLSearchParams({
-          from: "TechForge <noreply@contact.virajbandara.com>",
+          from: "OptiqSolution <noreply@contact.optiqsolution.com>",
           to,
           subject,
           text,
@@ -47,17 +47,17 @@ export async function onRequestPost(context) {
     // Send email to the user
     await sendEmail(
       `${name} <${email}>`,
-      `Hello ${name}, Thank you for reaching out to TechForge`,
-      `Dear ${name},\n\nThank you for contacting TechForge! We’ve received your message and will get back to you shortly. Our team is here to assist with any questions or needs you have about our services.\n\nIf there's anything urgent, feel free to reach us at +1 905 981 8019 or reply to this email directly.\n\nWe look forward to helping you!\n\nBest regards,\nTechForge Team`
+      `Hello ${name}, Thank you for reaching out to Optiq Solution`,
+      `Dear ${name},\n\nThank you for contacting Optiq Solution! We've received your message and will get back to you shortly. Our team is here to assist with any questions or needs you have about our services.\n\nIf there's anything urgent, feel free to reach us at +1 905 981 8019 or reply to this email directly.\n\nWe look forward to helping you!\n\nBest regards,\nOptiq Solution Team`
     );
 
     // Send email to the internal team
     await sendEmail(
-      `TechForge - Contact Us <me@virajbandara.com>`,
+      `Optiq Solution - Contact Us <contact@optiqsolution.com>`,
       `[Attention] New inquiry received.`,
       `Hello Team,\n\nYou have received a new contact form submission:\n\n- Name: ${name}\n- Email: ${email}\n- Company: ${
         company || "N/A"
-      }\n- Message:\n${message}\n\nPlease review and follow up as necessary.\n\nBest regards,\nTechForge Automated System`
+      }\n- Message:\n${message}\n\nPlease review and follow up as necessary.\n\nBest regards,\nOptiq Solution Automated System`
     );
 
     // Success response

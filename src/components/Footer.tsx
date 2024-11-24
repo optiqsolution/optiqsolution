@@ -14,11 +14,11 @@ export default function Footer() {
               className="flex items-center space-x-2 mb-4"
             >
               <Code2 className="h-8 w-8 text-blue-400" />
-              <span className="text-xl font-bold">TechForge</span>
+              <span className="text-xl font-bold">Optiq Solution</span>
             </motion.div>
             <p className="text-gray-400">
-              Driving innovation and crafting seamless digital solutions to
-              transform the future, one idea at a time.
+              Transforming Service Excellence Through Clarity, Precision, and
+              Intelligence.
             </p>
           </div>
 
@@ -73,7 +73,8 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
           <p>
-            &copy; {new Date().getFullYear()} TechForge. All rights reserved.
+            &copy; {new Date().getFullYear()} Optiq Solution. All rights
+            reserved.
           </p>
         </div>
       </div>

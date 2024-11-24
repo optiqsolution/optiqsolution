@@ -37,7 +37,9 @@ export default function Contact() {
       );
     } catch (error) {
       console.error("Error:", error);
-      alert("Something went wrong! Please contact us via me@virajbandara.com");
+      alert(
+        "Something went wrong! Please contact us via contact@optiqsolution.com"
+      );
     }
   };
 

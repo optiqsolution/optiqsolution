@@ -12,34 +12,34 @@ export default function Process() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h2 className="text-4xl font-bold mb-6">
-            IDEATE - INNOVATE - REALIZE
+            CLARITY - PRECISION - INTELLIGENCE
           </h2>
           <p className="text-xl text-gray-600">
-            We collaborate with our customers to unlock exceptional value by
-            guiding them through the strategic selection of cutting-edge
-            technologies to bring their vision to life. From concept to
-            execution, our transparent and agile delivery model has consistently
-            delivered outstanding results for both Fortune 500 companies and
-            innovative startups. Let us help make your next success story a
-            reality.
+            We partner with service companies worldwide to sharpen their
+            competitive edge through intelligent technology solutions. Our
+            approach combines precise analysis, clear strategy, and smart
+            implementation to transform operations and amplify efficiency. From
+            established global service providers to emerging innovators, our
+            data-driven methodology consistently delivers measurable impact and
+            lasting value.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <ProcessCard
             icon={<Lightbulb className="h-8 w-8" />}
-            title="IDEATE"
-            description="Empowering your vision with cutting-edge expertise. Together, we refine your concepts, ensuring market relevance and technical feasibility to provide you with a winning edge in the competitive landscape."
+            title="CLARITY"
+            description="Bringing sharp focus to your service operations. We help you see through complexity, using advanced analytics and AI to illuminate the path forward. Our solutions provide crystal-clear insights that drive confident decision-making and operational excellence."
           />
           <ProcessCard
             icon={<Rocket className="h-8 w-8" />}
-            title="INNOVATE"
-            description="Beyond execution lies transformation. We relentlessly innovate to uncover creative solutions, ensuring your vision evolves into groundbreaking realities."
+            title="PRECISION"
+            description="Where accuracy meets innovation. We engineer tailored solutions that fit your exact needs, ensuring every technological implementation is precisely calibrated to optimize your service delivery and maximize ROI."
           />
           <ProcessCard
             icon={<Target className="h-8 w-8" />}
-            title="REALIZE"
-            description="From vision to value, we’re your strategic partner in every step. Together, we bring your ideas to life, ensuring sustained success beyond realization."
+            title="INTELLIGENCE"
+            description="Transforming service delivery through smart technology. Our AI-powered solutions and intelligent systems evolve with your business, continuously learning and adapting to deliver sustained competitive advantage in the global service landscape."
           />
         </div>
       </div>

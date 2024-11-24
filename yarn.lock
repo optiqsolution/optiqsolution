@@ -2472,6 +2472,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"optiqsolution@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "optiqsolution@workspace:."
+  dependencies:
+    "@cloudflare/workers-types": "npm:^4.20241112.0"
+    "@eslint/js": "npm:^9.9.1"
+    "@types/node": "npm:^22.9.0"
+    "@types/react": "npm:^18.3.5"
+    "@types/react-dom": "npm:^18.3.0"
+    "@vitejs/plugin-react": "npm:^4.3.1"
+    autoprefixer: "npm:^10.4.18"
+    eslint: "npm:^9.9.1"
+    eslint-plugin-react-hooks: "npm:^5.1.0-rc.0"
+    eslint-plugin-react-refresh: "npm:^0.4.11"
+    framer-motion: "npm:^11.0.8"
+    globals: "npm:^15.9.0"
+    lucide-react: "npm:^0.344.0"
+    postcss: "npm:^8.4.35"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+    tailwindcss: "npm:^3.4.1"
+    typescript: "npm:^5.5.3"
+    typescript-eslint: "npm:^8.3.0"
+    typewriter-effect: "npm:^2.21.0"
+    vite: "npm:^5.4.2"
+  languageName: unknown
+  linkType: soft
+
 "p-limit@npm:^3.0.2":
   version: 3.1.0
   resolution: "p-limit@npm:3.1.0"
@@ -3133,34 +3161,6 @@ __metadata:
   checksum: 10c0/a5eca3eb50bc11552d453488344e6507156b9193efd7635e98e867fab275d527af53d8866e2370cd09dfe74378a18111622ace35af6a608e5223a7d27fe99537
   languageName: node
   linkType: hard
-
-"techforge@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "techforge@workspace:."
-  dependencies:
-    "@cloudflare/workers-types": "npm:^4.20241112.0"
-    "@eslint/js": "npm:^9.9.1"
-    "@types/node": "npm:^22.9.0"
-    "@types/react": "npm:^18.3.5"
-    "@types/react-dom": "npm:^18.3.0"
-    "@vitejs/plugin-react": "npm:^4.3.1"
-    autoprefixer: "npm:^10.4.18"
-    eslint: "npm:^9.9.1"
-    eslint-plugin-react-hooks: "npm:^5.1.0-rc.0"
-    eslint-plugin-react-refresh: "npm:^0.4.11"
-    framer-motion: "npm:^11.0.8"
-    globals: "npm:^15.9.0"
-    lucide-react: "npm:^0.344.0"
-    postcss: "npm:^8.4.35"
-    react: "npm:^18.3.1"
-    react-dom: "npm:^18.3.1"
-    tailwindcss: "npm:^3.4.1"
-    typescript: "npm:^5.5.3"
-    typescript-eslint: "npm:^8.3.0"
-    typewriter-effect: "npm:^2.21.0"
-    vite: "npm:^5.4.2"
-  languageName: unknown
-  linkType: soft
 
 "thenify-all@npm:^1.0.0":
   version: 1.6.0
