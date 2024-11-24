@@ -13,8 +13,8 @@ function App() {
       <main>
         <Hero />
         <Process />
-        <Technologies />
         <Services />
+        <Technologies />
         <Contact />
       </main>
       <Footer />
