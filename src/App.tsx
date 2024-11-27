@@ -9,23 +9,13 @@ import Services from "./components/Services";
 import Technologies from "./components/Technologies";
 
 function App() {
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({ namespace: "30min" });
-      cal("floatingButton", {
-        calLink: "optiq/15min",
-        config: { layout: "month_view", theme: "light" },
-        buttonText: "Quick chat?",
-        buttonColor: "#2564eb",
-      });
-      cal("ui", {
-        theme: "light",
-        styles: { branding: { brandColor: "#000000" } },
-        hideEventTypeDetails: false,
-        layout: "month_view",
-      });
-    })();
-  }, []);
+  useEffect(()=>{
+	  (async function () {
+		const cal = await getCalApi({"namespace":"15min"});
+		cal("floatingButton", {"calLink":"optiq/15min","config":{"layout":"month_view"},"buttonPosition":"bottom-left"});
+		cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
+	  })();
+	}, [])
 
   return (
     <div className="min-h-screen">
