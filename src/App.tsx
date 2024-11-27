@@ -12,8 +12,8 @@ function App() {
   useEffect(()=>{
 	  (async function () {
 		const cal = await getCalApi({"namespace":"15min"});
-		cal("floatingButton", {"calLink":"optiq/15min","config":{"layout":"month_view"},"buttonPosition":"bottom-left","buttonText":"Quick Chat?"});
-		cal("ui", {"styles":{"branding":{"brandColor":"#2564eb"}},"hideEventTypeDetails":false,"layout":"month_view"});
+		cal("floatingButton", {"calLink":"optiq/15min","config":{"layout":"month_view"},"buttonColor":"#2564eb","buttonPosition":"bottom-left","buttonText":"Quick Chat?"});
+		cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
 	  })();
 	}, [])
 
