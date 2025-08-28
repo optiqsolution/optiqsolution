@@ -10,13 +10,13 @@ import Technologies from "./components/Technologies";
 import { ThemeProvider } from "./components/theme-provider";
 
 function App() {
-  useEffect(()=>{
-	  (async function () {
-		const cal = await getCalApi({"namespace":"15min"});
-		cal("floatingButton", {"calLink":"optiq/15min","config":{"layout":"month_view"},"buttonColor":"#2564eb","buttonPosition":"bottom-left","buttonText":"Quick Chat?"});
-		cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
-	  })();
-	}, [])
+  // useEffect(()=>{
+	//   (async function () {
+	// 	const cal = await getCalApi({"namespace":"15min"});
+	// 	cal("floatingButton", {"calLink":"optiq/15min","config":{"layout":"month_view"},"buttonColor":"#2564eb","buttonPosition":"bottom-left","buttonText":"Quick Chat?"});
+	// 	cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
+	//   })();
+	// }, [])
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="optiq-ui-theme">
